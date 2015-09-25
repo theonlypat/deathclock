@@ -36,6 +36,13 @@ h4 {font-size:2em;}
 h5 {font-size:1.75em;}
 h6 {font-size:1.5em;}
 
+.wf-loading {
+	visibility:hidden;
+}
+.wf-active {
+	visibility:visible;
+}
+
 
 
 /* Media queries
