@@ -36,11 +36,10 @@ h4 {font-size:2em;}
 h5 {font-size:1.75em;}
 h6 {font-size:1.5em;}
 
-.wf-loading {
-	visibility:hidden;
-}
-.wf-active {
-	visibility:visible;
+.brandongrotesk {
+	font-family: BrandonGrotesque-Regular;
+	font-weight: normal;
+	font-style: normal;
 }
 
 
@@ -178,7 +177,7 @@ header nav {
 }
 
 footer {
-	margin:auto;
+	margin:20px auto 0;
 	width:100%;
 	/*flex-grow:1;*/
 	align-self:flex-end;

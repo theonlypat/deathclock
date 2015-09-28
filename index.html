@@ -32,6 +32,8 @@
 	<link rel="stylesheet" href="assets/css/reset.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
 
+	<link rel="stylesheet" href="assets/css/brandongrotesk.css" />
+
 	<!-- Lea Verou's prefixfree (http://leaverou.github.io/prefixfree/), lets you use un-prefixed properties in your CSS files -->
 	<script src="assets/js/libs/prefixfree.min.js"></script>
 
@@ -62,15 +64,15 @@
 
 	<header>
 		<a href="http://betterutah.org" target="_blank"><img src="assets/images/ABU-BW_Logo.png" alt="Alliance for a Better Utah" /></a>
-		<h1 class="tk-brandon-grotesque"><a href="http://betterutah.org/stillwaiting">#StillWaiting</a></h1>
+		<h1 class="brandongrotesk"><a href="http://betterutah.org/stillwaiting">#StillWaiting</a></h1>
 	</header>
 
 	<div class="row clock">
-		<h2 class="tk-brandon-grotesque">Medicaid Clock</h2>
+		<h2 class="brandongrotesk">Medicaid Clock</h2>
 
       	<div ng-controller="MyController" class="small-6 columns">
 
-      	<h3 class="tk-brandon-grotesque narrative">Utahns are still waiting for a solution to Medicaid expansion from our Legislature</h3>
+      	<h3 class="brandongrotesk narrative">Utahns are still waiting for a solution to Medicaid expansion from our Legislature</h3>
 
       	<div id="tallyClock">
 	      	<div class="clockDays">
@@ -91,7 +93,7 @@
 		    </div>
 	    </div>
 
-        <h4 class="tk-brandon-grotesque narrative"><a href="http://healthaffairs.org/blog/2014/01/30/opting-out-of-medicaid-expansion-the-health-and-financial-impacts/" target="_blank">According to a study</a> from Harvard University published in Health Affairs, a leading health policy journal, Utah's delay in expanding Medicaid has resulted in <span style="font-family:DigitalICG, sans-serif">{{ amountOfDeath }}</span> deaths due to lack of health insurance since federal funds were first made available January 1, 2014. Statistically speaking, this means that a Utahn without health insurance will tragically pass away in</h4>
+        <h4 class="brandongrotesk narrative"><a href="http://healthaffairs.org/blog/2014/01/30/opting-out-of-medicaid-expansion-the-health-and-financial-impacts/" target="_blank">According to a study</a> from Harvard University published in Health Affairs, a leading health policy journal, Utah's delay in expanding Medicaid has resulted in <span style="font-family:DigitalICG, sans-serif">{{ amountOfDeath }}</span> deaths due to lack of health insurance since federal funds were first made available January 1, 2014. Statistically speaking, this means that a Utahn without health insurance will tragically pass away in</h4>
         <div id="countdownClock">
         	<div class="clockDays">
         		<div class="clockNumber" style="font-family:DigitalICG, sans-serif">{{ deathClock.d }}</div>
@@ -130,9 +132,6 @@
 <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src='assets/js/libs/jquery-1.11.3.min.js'>\x3C/script>")</script>
-
-<script src="https://use.typekit.net/ajy1mmr.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <script type="text/javascript" src="assets/ABU_Death_Clock.js"></script>
 
