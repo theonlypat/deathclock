@@ -69,7 +69,7 @@ header {
 	/*height:110px;*/
 }
 header img {
-	width:70%;
+	width:280px;
 	/*float:left;*/
 	margin:10px auto;
 	border:none;
@@ -77,6 +77,9 @@ header img {
 header a {
 	border:none;
 	box-shadow:none;
+}
+header a:hover {
+	background-color:transparent;
 }
 header h1 {
 	/*float:left;*/
@@ -190,7 +193,8 @@ header nav {
 	max-width: 750px;
 	text-align: center;
 	margin:5px auto;
-	line-height: 1.05;
+	padding:0 10px;
+	line-height: 1.20;
 }
 .narrative h4 {
 	line-height: 1.05;
@@ -201,6 +205,27 @@ footer {
 	width:100%;
 	/*flex-grow:1;*/
 	align-self:flex-end;
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+	header img {
+		width:170px;
+		float:left;
+		margin:10px 20px 0 0;
+	}
+	header h1 {
+		float:left;
+	}
+
+	#countdownClock .clockNumber {
+		font-size:4.25em;
+		margin:0 20px;
+		padding:0;
+	}
+	#countdownClock .clockType {
+		font-size:2.25em;
+		margin:0 10px;
+	}
 }
 
 @media screen and (min-width: 800px) {
@@ -229,6 +254,7 @@ footer {
 
 	.narrative {
 		line-height: 1.25;
+		padding:0;
 	}
 	.narrative h4 {
 		line-height: 1.05;
