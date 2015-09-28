@@ -67,7 +67,7 @@ header {
 	max-width:600px;
 	flex-grow:1;
 	align-self:flex-end;
-	height:120px;
+	height:110px;
 }
 header img {
 	width:150px;
@@ -165,6 +165,16 @@ header nav {
 }
 #shareBlock a {
 	margin:0 30px;
+}
+
+.narrative {
+	max-width: 750px;
+	text-align: center;
+	margin:5px auto;
+	line-height: 1.25;
+}
+.narrative h4 {
+	line-height: 1.05;
 }
 
 footer {

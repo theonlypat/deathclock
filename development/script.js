@@ -3,7 +3,7 @@ var deathClock = angular.module('deathClock', []);
 deathClock.controller('MyController', ['$scope', function($scope){
 //Change the starting date so see what would happen with different dates
   
-  var startingDate = new Date("2012-06-28")
+  var startingDate = new Date("2014-01-01")
   var day = 86400000
   //rate of Death that someone dies every 3 days because of lack of heathcare feel free to mess around with the ratio
   var rateOfDeath = 1.825 * day

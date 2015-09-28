@@ -37,14 +37,14 @@
 
 	<!-- This is an un-minified, complete version of Modernizr. (http://modernizr.com)
 		 Before you move to production, you should generate a custom build that only has the detects you need. -->
-	<script src="assets/js/libs/modernizr-2.8.3.dev.js"></script>
+	<!-- <script src="assets/js/libs/modernizr-2.8.3.dev.js"></script> -->
 
 	<!-- Angular -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script>
 
 	<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
-	<meta name="twitter:card" content="">
-	<meta name="twitter:site" content="betterutah.org">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@betterutah">
 	<meta name="twitter:title" content="#StillWaiting: Medicaid Clock">
 	<meta name="twitter:description" content="The Utah Legislature has been unable to find a solution now for nearly 1200 days leaving thousands of Utahns #StillWaiting. This inaction has already cost hundreds of Utahns their lives. Let's stop the clock today!">
 	<meta name="twitter:url" content="http://betterutah.org/healthcare_deathclock/">
@@ -52,7 +52,7 @@
 	<meta property="og:title" content="#StillWaiting: Medicaid Clock" />
 	<meta property="og:description" content="The Utah Legislature has been unable to find a solution now for nearly 1200 days leaving thousands of Utahns #StillWaiting. This inaction has already cost hundreds of Utahns their lives. Let's stop the clock today!" />
 	<meta property="og:url" content="http://betterutah.org/medicaidclock/" />
-	<meta property="og:image" content="http://betterutah.org/medicaid/assets/images/abu-deathclock-fbshare.png" />
+	<meta property="og:image" content="http://betterutah.org/medicaid/assets/images/abu-medicaidclock-fbshare.png" />
 
 </head>
 
@@ -70,7 +70,7 @@
 
       	<div ng-controller="MyController" class="small-6 columns">
 
-      	<h3 class="tk-brandon-grotesque">The Legislature has been unable to find a solution now for</h3>
+      	<h3 class="tk-brandon-grotesque narrative">Utahns are still waiting for a solution to Medicaid expansion from our Legislature</h3>
 
       	<div id="tallyClock">
 	      	<div class="clockDays">
@@ -91,9 +91,7 @@
 		    </div>
 	    </div>
 
-        <h4 class="tk-brandon-grotesque">This has lead to <span style="font-family:DigitalICG, sans-serif">{{ amountOfDeath }}</span> tragic deaths as a result of inaction.</h4>
-
-        <h4 class="tk-brandon-grotesque">Statistically speaking, this means that someone else will die from a lack of coverage in</h4>
+        <h4 class="tk-brandon-grotesque narrative"><a href="http://healthaffairs.org/blog/2014/01/30/opting-out-of-medicaid-expansion-the-health-and-financial-impacts/" target="_blank">According to a study</a> from Harvard University published in Health Affairs, a leading health policy journal, Utah's delay in expanding Medicaid has resulted in <span style="font-family:DigitalICG, sans-serif">{{ amountOfDeath }}</span> deaths due to lack of health insurance since federal funds were first made available January 1, 2014. Statistically speaking, this means that a Utahn without health insurance will tragically pass away in</h4>
         <div id="countdownClock">
         	<div class="clockDays">
         		<div class="clockNumber" style="font-family:DigitalICG, sans-serif">{{ deathClock.d }}</div>
@@ -118,12 +116,7 @@
         	</div>
 
    	 	</div>
-   	 	<div id="shareBlock">
-   	 		<p class="tk-brandon-grotesque">Personally let Speaker Hughes know that he's on the clock:</p>
-   	 		<a href="https://www.facebook.com/electhughes" target="_blank"><i class="fa fa-facebook fa-4x"></i></a> <a href="https://twitter.com/ghughes51" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
-   	 		<!-- <p class="tk-brandon-grotesque">Share the clock with your friends and let them now thousands are #StillWaiting for life saving healthcare:</p>
-   	 		<a href="" target="_blank"><i class="fa fa-facebook fa-4x"></i></a> <a href="" target="_blank"><i class="fa fa-twitter fa-4x"></i></a> -->
-   	 	</div>
+   	 	
 	</div>
 
 	<footer>
