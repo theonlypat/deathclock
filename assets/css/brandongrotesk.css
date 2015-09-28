@@ -24,5 +24,5 @@
 @import url("//hello.myfonts.net/count/2f49c0");
 
   
-@font-face {font-family: 'BrandonGrotesque-Regular';src: url('/assets/webfonts/2F49C0_0_0.eot');src: url('/assets/webfonts/2F49C0_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/webfonts/2F49C0_0_0.woff2') format('woff2'),url('/assets/webfonts/2F49C0_0_0.woff') format('woff'),url('assets/webfonts/2F49C0_0_0.ttf') format('truetype');}
+@font-face {font-family: 'BrandonGrotesque-Regular';src: url('../webfonts/2F49C0_0_0.eot');src: url('../webfonts/2F49C0_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/2F49C0_0_0.woff2') format('woff2'),url('../webfonts/2F49C0_0_0.woff') format('woff'),url('../webfonts/2F49C0_0_0.ttf') format('truetype');}
  
