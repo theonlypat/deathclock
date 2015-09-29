@@ -103,13 +103,22 @@ header nav {
 }
 
 #trailerButton {
-	margin:10px auto 20px;
+	margin:10px auto 30px;
 	display: block;
+	background: transparent;
+	padding:15px 30px 10px;
+	border:3px solid lightblue;
+	font-size: 20px;
+	color:#000;
+}
+#trailerButton:hover {
+	background-color:lightblue;
+	color:#000;
 }
 
 .trailer {
 	display:none;
-	margin:10px auto 20px;
+	margin:10px auto 30px;
 }
 
 /* ---------- CLOCK ---------- */
@@ -158,6 +167,10 @@ header nav {
 
 .clock span, .clockType, .clockNumber {
 	color: lightblue;
+}
+.clock span {
+	background-color: #888;
+	padding:3px 5px 5px;
 }
 .clockDays, .clockHours, .clockMinutes, .clockSeconds, .clockShares {
 	text-align:center;
@@ -324,13 +337,13 @@ footer {
 		align-items:center;
 	}
 	.shareItem {
-		max-width: 100px;
-		margin:5px 0;
+		max-width: 150px;
+		margin:10px 0;
 		color:lightblue;
 	}
 	.socialLink {
 		display: block;
-		margin:0;
+		margin:5px 0;
 	}
 
 }
