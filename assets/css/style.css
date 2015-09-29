@@ -1,5 +1,5 @@
 /* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
-body {font: 13px Helmet, Freesans, sans-serif; background-color:#fff;}
+body {font: 13px Helmet, Freesans, sans-serif; background-color:#fff;background: url('../images/people_bg.png') bottom center no-repeat}
 
 .DigitalICG { 
 	font-family: DigitalICG;
@@ -52,6 +52,7 @@ h6 {font-size:1.5em;}
 	flex-direction:column;
 	align-items:center;
 	text-align:center;
+	background-color: rgba(265,265,265, .85);
 }
 #flex-div {
 	/*position:fixed !important;
