@@ -45,4 +45,9 @@ $(".js-social-share").on("click", function(e) {
 //   });
 // }
 
+$("#trailerButton").click(function(){
+    $("#trailer").fadeIn('slow');
+    $(this).hide();
+});
+
 };

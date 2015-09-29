@@ -102,6 +102,16 @@ header nav {
 	clear:both;
 }
 
+#trailerButton {
+	margin:10px auto 20px;
+	display: block;
+}
+
+.trailer {
+	display:none;
+	margin:10px auto 20px;
+}
+
 /* ---------- CLOCK ---------- */
 
 .clock {
