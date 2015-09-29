@@ -142,13 +142,13 @@ header nav {
 #countdownClock {
 	margin:auto;
 	display:flex;
-	flex-flow:row, nowrap;
+	flex-wrap:wrap;
 	justify-content:center;
 	text-align:center;
 }
 #countdownClock .clockNumber {
 	font-size:2em;
-	margin:15px 10px 0;
+	margin:0 10px;
 	padding:0;
 }
 #countdownClock .clockType {
@@ -166,14 +166,15 @@ header nav {
 	padding:5px;
 }
 .clockShares {
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
+	margin-top:10px;
 }
 .shareItem {
 	margin:5px 0;
 	color:lightblue;
+}
+.socialLink {
+	display: inline;
+	margin:0 10px;
 }
 .shareItem a {
 	border:none;
@@ -219,6 +220,7 @@ footer {
 	align-self:flex-end;
 }
 
+
 @media screen and (min-width: 600px) and (max-width: 799px) {
 	header img {
 		width:170px;
@@ -229,6 +231,9 @@ footer {
 		float:left;
 	}
 
+	#countdownClock {
+		flex-wrap:nowrap;
+	}
 	#countdownClock .clockNumber {
 		font-size:4.25em;
 		margin:0 20px;
@@ -237,6 +242,27 @@ footer {
 	#countdownClock .clockType {
 		font-size:2.25em;
 		margin:0 10px;
+	}
+	.clockDays, .clockHours, .clockMinutes, .clockSeconds, .clockShares {
+		text-align:center;
+		background-color:#888;
+		margin:0 5px;
+		padding:5px;
+	}
+	.clockShares {
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+	.shareItem {
+		max-width: 100px;
+		margin:5px 0;
+		color:lightblue;
+	}
+	.socialLink {
+		display: block;
+		margin:0;
 	}
 }
 
@@ -272,7 +298,9 @@ footer {
 		line-height: 1.05;
 	}
 
-
+	#countdownClock {
+		flex-wrap:nowrap;
+	}
 	#countdownClock .clockNumber {
 		font-size:8em;
 		margin:0 20px;
@@ -281,6 +309,28 @@ footer {
 	#countdownClock .clockType {
 		font-size:4em;
 		margin:0 10px;
+	}
+
+	.clockDays, .clockHours, .clockMinutes, .clockSeconds, .clockShares {
+		text-align:center;
+		background-color:#888;
+		margin:0 5px;
+		padding:5px;
+	}
+	.clockShares {
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+	.shareItem {
+		max-width: 100px;
+		margin:5px 0;
+		color:lightblue;
+	}
+	.socialLink {
+		display: block;
+		margin:0;
 	}
 
 }
